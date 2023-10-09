@@ -1,0 +1,17 @@
+mat-expansion-panel {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  mat-expansion-panel-header {
+    background-color: #e0e0e0;
+  }
+  
+  mat-panel-title {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    margin: 10px;
+  }
+  

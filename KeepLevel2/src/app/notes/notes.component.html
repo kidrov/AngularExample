@@ -1,0 +1,21 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of notes">
+      <th scope="row">{{row.id}}</th>
+      <td>{{row.title}}</td>
+      <td>{{row.description}}</td>
+      <td><button mat-button color="primary" (click)="updateNoteDialog(row)">Update</button></td>
+      <td><button mat-button color="warn" (click)="deleteNote(row.id)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+

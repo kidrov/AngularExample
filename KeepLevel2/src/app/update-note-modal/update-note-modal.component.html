@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Update Note</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <input matInput [(ngModel)]="updatedNote.title" placeholder="Title">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="updatedNote.description" placeholder="Description"></textarea>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+  <button mat-button (click)="onSaveClick()" cdkFocusInitial>Save</button>
+</mat-dialog-actions>
